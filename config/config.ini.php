@@ -1,16 +1,16 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Piwik; you can manually override the default values in global.ini.php by redefining them in this file.
 [database]
-host = $_ENV[DB_HOST]
-username = $_ENV[DB_USER]
-password = $_ENV[DB_PASSWORD]
-dbname = $_ENV[DB_DATABASE]
-port = $_ENV[DB_PORT]
+host = $_ENV["DB_HOST"]
+username = $_ENV["DB_USER"]
+password = $_ENV["DB_PASSWORD"]
+dbname = $_ENV["DB_DATABASE"]
+port = $_ENV["DB_PORT"]
 tables_prefix = "matomo_"
 
 [General]
-salt = $_ENV[SALT]
-trusted_hosts[] = $_ENV[TRUSTED_HOST]
+salt = $_ENV["SALT"]
+trusted_hosts[] = $_ENV["TRUSTED_HOST"]
 force_ssl = 1
 
 [Plugins]
